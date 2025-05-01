@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zaraga.logger", "zaraga.logger\zaraga.logger.csproj", "{021B7999-867C-445E-B4D3-B89975F05DEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{021B7999-867C-445E-B4D3-B89975F05DEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{021B7999-867C-445E-B4D3-B89975F05DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{021B7999-867C-445E-B4D3-B89975F05DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{021B7999-867C-445E-B4D3-B89975F05DEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
