@@ -22,7 +22,7 @@
 		<!--<PackageDescription>PACKAGE_DESCRIPTION</PackageDescription>-->
 		<Authors>zaraga</Authors>
 		<RepositoryUrl>https://www.nuget.org/packages/zaraga.logger</RepositoryUrl>
-		<Version>1.1.0</Version>
+		<Version>1.2.0</Version>
 		<!--Version control - X.Y.Z-->
 		<!--X = Framework Version-->
 		<!--X = Package Changes, Major Functionallity-->

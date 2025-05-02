@@ -1,9 +1,6 @@
-﻿using System;
+﻿namespace zaraga.logger;
 
-namespace zaraga.logger
+// All the code in this file is only included on Tizen.
+public partial class PlatformClass1
 {
-    // All the code in this file is only included on Tizen.
-    public class PlatformClass1
-    {
-    }
 }

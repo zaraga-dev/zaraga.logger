@@ -1,6 +1,6 @@
 ﻿namespace zaraga.logger;
 
 // All the code in this file is only included on iOS.
-public class PlatformClass1
+public partial class PlatformClass1
 {
 }
