@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
-using Newtonsoft.Json;
 
 namespace zaraga.logger;
 
@@ -85,8 +84,8 @@ public class Manager
 		try
 		{
 #if DEBUG
-			System.Diagnostics.Debug.WriteLine(JsonConvert.SerializeObject(exception?.Message));
-			System.Diagnostics.Debug.WriteLine(JsonConvert.SerializeObject(exception?.InnerException?.Message));
+			System.Diagnostics.Debug.WriteLine(exception?.Message);
+			System.Diagnostics.Debug.WriteLine(exception?.InnerException?.Message);
 #endif
 			lock (UsedLogPath)
 			{
