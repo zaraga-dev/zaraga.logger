@@ -24,7 +24,9 @@ jobs:
     - name: Build
       run: dotnet pack --configuration Release
     - name: Push nuget to NuGet.org
-      run: dotnet nuget push **/*.nupkg --source "https://api.nuget.org/v3/index.json" --api-key "${{ secrets.NUGET_API_KEY }}" --skip-duplicate
+      env:
+        NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+      run: dotnet nuget push **/*.nupkg --source "https://api.nuget.org/v3/index.json" --api-key "$env:NUGET_API_KEY" --skip-duplicate
     #- name: Push nuget to GitHub
     # run: |
     #        dotnet nuget add source --username Agarz4 --password ${{ secrets.PUBLISH_GITHUB_PAT }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/Agarz4/index.json"
