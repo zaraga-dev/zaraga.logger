@@ -15,8 +15,6 @@ jobs:
 
     steps:
     - shell: cmd
-      env:
-        NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
     - uses: actions/checkout@v4
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
@@ -27,6 +25,8 @@ jobs:
     - name: Build
       run: dotnet pack --configuration Release
     - name: Push nuget to NuGet.org
+      env:
+        NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
       run: dotnet nuget push **/*.nupkg --source "https://api.nuget.org/v3/index.json" --api-key "%NUGET_API_KEY%" --skip-duplicate
     #- name: Push nuget to GitHub
     # run: |
