@@ -25,7 +25,7 @@ jobs:
       
     - name: Push nuget to NuGet.org
       run: dotnet nuget push **/*.nupkg --source "https://api.nuget.org/v3/index.json" --api-key "${{ secrets.NUGET_API_KEY }}" --skip-duplicate
-    #- name: Push nuget to GitHub
-    # run: |
-    #        dotnet nuget add source --username Agarz4 --password ${{ secrets.PUBLISH_GITHUB_PAT }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/Agarz4/index.json"
-    #        dotnet nuget push "D:\a\zaraga.logger\zaraga.logger\zaraga.logger\bin\Release\zaraga.logger.1.0.0.nupkg" --api-key ${{ secrets.PUBLISH_GITHUB_PAT }} --source github
+    - name: Push nuget to GitHub
+      run: |
+        dotnet nuget add source --username Agarz4 --password ${{ secrets.PUBLISH_GITHUB_PAT }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/Agarz4/index.json"
+        dotnet nuget push "D:\a\zaraga.logger\zaraga.logger\zaraga.logger\bin\Release\zaraga.logger.1.0.0.nupkg" --api-key ${{ secrets.PUBLISH_GITHUB_PAT }} --source github
