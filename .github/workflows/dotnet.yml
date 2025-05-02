@@ -22,10 +22,7 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet pack --configuration Release
-#==============================================
-  publish:
-    runs-on: windows-latest
-    steps:
+      
     - name: Push nuget to NuGet.org
       env:
         NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
