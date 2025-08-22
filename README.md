@@ -87,4 +87,4 @@ public partial class App : Application
 
 ## Authors
 
-- [@Agarz4](https://github.com/Agarz4)
+- [@zaraga](https://github.com/zaraga-dev)
